@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS 初始化 */
+body,h1,h2,h3,h4,h5,h6,div,dl,dt,dd,table,tr,td,form,p,ul,li,ol,span,img,a,em,i,strong,b,input,select,option,textarea,label{ margin:0; padding:0;}
+li{ list-style:none;}
+img{ border:0 none; vertical-align:top;}
+body{ font-family:"微软雅黑"; font-size:12px; background:#e7e7e7; color:#000;}
+a{ color:#006699; text-decoration:none;}
+a:hover{ color:#f04381;}
+.clearfix{ *zoom:1;}
+.clearfix:after{ content:"."; clear:both; visibility:hidden; height:0; display:block;}
+/*主要*/
+#header{ width:100%; height:56px; background:#fff; border-bottom:#dbdbdb 3px solid;}
+.header-layer{ width:960px; height:100%; margin:0 auto;}
+.logo{ float:left; width:80px; height:40px; margin:9px 0 0 7px;}
+.nav{ float:left; margin:21px 0 0 56px; }
+.nav li{ float:left ; margin-right:36px; display:inline;}
+.nav a{ font-family:"微软雅黑"; font-size:19px; color:#666;}
+.nav a:hover{ color:#f04381;}
+.search{ float:left; width:200px; height:30px; margin:13px 0 0 52px; display:inline; background:url(../images/sprite.png) 1px -183px; }
+.searchtext{ float:left; width:160px;  font-size:16px; margin:8px 0 0 8px; color:#dbdbdb; display:inline; border:0; background:none;}
+.searchbtn{ float:right; width:28px; height:30px; cursor:pointer; border:0; background:none;}
+.loginreg{ float:right; width:133px; height:30px; margin-top:12px;}
+.loginreg a{ float:left; margin-right:8px; color:#FFF;}
+.loginreg a:hover{ color:#f04381;}
+.loginreg_login{ display:block;  width:55px; height:30px; line-height:30px; text-align:center; cursor:pointer; background:url(../images/sprite.png);}
+.loginreg_reg{ display:block;  width:55px; height:30px; line-height:30px; text-align:center; cursor:pointer; background:url(../images/sprite.png) 0 -38px;}
+.loginreg_login:hover{ background:url(../images/sprite.png)0 -86px;}
+.loginreg_reg:hover{ background:url(../images/sprite.png) 0 -133px;}
+#content{ width:820px; padding:0 26px 30px 32px; height:auto; margin:18px auto 0; border:1px solid #cfdfe0; background:#FFF;}
+.content_top{ height:42px;}
+.content_top h2{ float:left; line-height:24px; margin-top:18px; color:#006699; font-size:18px; font-weight:bold;}
+.content_top a{ float:right; margin-top:27px; color:#006699; font-weight:bold; text-decoration:none;}
+.content_top a:hover{ color:#f04381;}
+.content_time{ height:25px; line-height:26px; overflow:hidden; color:#999;}
+.content_p{ line-height:24px; font-size:14px; padding-top:10px; text-indent:2em; font-weight:bold;}
+.content_page{ text-align:center;;height:25px; margin-top:23px;}
+.content_page a{display:inline-block line-height:24px;background:#006699; color:#FFF; padding:4px 5px 5px 5px; font-weight:bold;}
+.content_page a:hover{ color:#000; background:none;}
+.content_link{ width:815px; height:68px; font-weight:bold; line-height:68px; margin-top:4px; border-bottom:1px dashed #d2dada;}
+.content_link span{ color:##bb99bb; margin:0 5px;}
+.content-tit{ height:58px; line-height:58px; font-size:14px;}
+.content-comment textarea{ display:block; width:808px; height:95px; line-height:20px; font-size:13px; padding:5px ; border:1px solid #999;}
+.content-comment .loginreg_login{ border:none; color:#FFF; margin-top:10px;} 
+.content-tit-comment{ line-height:68px; overflow: hidden; border-bottom:#d2dada 1px dashed;}
+.contalk{ padding:19px 0 10px 0;}
+.contalk dt{ height:30px; color:#797979;}
+.contalk dt span{ color:#9179a7; margin:0 4px;}
+.contalk dd{ line-height:17px; text-decoration:none; color:#515050; padding-left:10px; border-left:2px solid #d5d5d5; margin-left:34px;}
+#footer{ height:64px; padding-top:20px; line-height:24px; text-align:center; color:#636363;}
+#footer span{ font-family:"Arial";}
+
+
+/*蒙层*/
+#shade{ position:fixed;  top:0;  left:0; z-index:999999; width:100%; height:100%;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#3D000000', endColorstr='#3D000000');background:rgba(0,0,0,0.24);_position:absolute; _top:expression(eval("document.documentElement.scrollTop"));top:-100%; transition: all 2s;}
+.shadeMain{ position:absolute; width:660px; height:225px; left:50%; top:50%; margin:-117px 0 0 -335px; background:#fff; border:5px #238fdb solid; _top:expression(eval("document.documentElement.clientHeight/2"));}
+.shadeMain_top{ height:26px; line-height:26px;}
+.shadeMain_top h3{ float:left; margin-left:8px; font-weight:500; font-size:15px; color:#000;}
+.shadeMain_top span{ float:right; margin-right:6px; color:#238fdb; font-size:15px; cursor:pointer;}
+.shadeMain_top span b{ font-size:10px; vertical-align:top;}
+.shadeMain_left{ float:left; width:413px; height:169px; padding-top:13px; border-right:#ccc 1px solid;}
+.shadeMain_input{ height:26px; margin-top:8px;}
+.shadeMain_name{ float:left; width:102px; padding-right:10px; height:26px; line-height:26px; text-align:right;}
+.shadeMain_text{ float:left; width:176px; height:14px; border:#aaa 1px solid; padding:5px;}
+.shadeMain_raido{ margin:7px 0 0 112px;}
+.shadeMain_raido label{ margin-left:-2px;}
+.shadeMain_submit{ padding:23px 0 0 110px; width:auto; height:26px; color:#FFF;}
+.shadeMain_submit .loginreg_login{ float:left; border:0 none; color:#FFF;}
+.shadeMain_submit a{ float:left; margin:7px 0 0 13px; text-decoration:underline; }
+.shadeMain_right{ float:left; margin-left:33px;}
+.shadeMain_right dt{ line-height:42px;}
+.shadeMain_right  a{ color:#FFF;}
+.shadeMain_right  a:hover{ color:#000;}
